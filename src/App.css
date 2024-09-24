@@ -70,8 +70,8 @@ button:hover {
   border-radius: 10px;
   padding: 20px;
   margin: 20px;
-  width: 300px;
-  text-align: left;
+  width: 150px;
+  text-align: center;
   color: #ffffff;
   transition: transform 0.3s ease-in-out;
 }
@@ -112,13 +112,12 @@ button:hover {
 
 .recipe-details {
   padding: 20px;
-  max-width: 600px;
   margin: auto;
   background-color: #4b0082;
   border-radius: 10px;
   border: 2px solid #ffd700; 
   color: #ffffff;
-  text-align: left;
+  text-align: center;
 }
 
 .recipe-details h2 {
@@ -147,4 +146,33 @@ button:hover {
 
 .recipe-details a:hover {
   background-color: #f0e68c;
+}
+
+@media (max-width: 768px) {
+  .recipe-details {
+    padding: 15px;  
+  }
+
+  .recipe-card {
+    width: 90%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .app-title {
+    font-size: 32px; 
+  }
+
+  .recipe-details img {
+    width: 100%; 
+    height: auto;
+  }
+
+  .recipe-card {
+    width: 100%; 
+  }
+
+  .recipe-card h2 {
+    font-size: 18px; 
+  }
 }

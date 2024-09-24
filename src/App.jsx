@@ -46,7 +46,7 @@ const App = () => {
         <h1 className="app-title">RezeptKing</h1>
 
         <button onClick={toggleDarkMode} className="toggle-mode">
-          {darkMode ? 'Light Mode' : 'Dark Mode'}
+          {darkMode ? 'Licht an' : 'Licht aus'}
         </button>
 
         {/* Suchformular */}
@@ -57,7 +57,7 @@ const App = () => {
 
         {/* Ladeanzeige */}
         {loading ? (
-          <p>Lädt...</p>
+          <p>Rezepte werden gebacken...</p>
         ) : (
           <Routes>
             {/* Route für die Rezeptliste */}
